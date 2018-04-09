@@ -1,4 +1,4 @@
-const Chimee = window.Chimee;
+const Mango = window.Mango;
 const plugin = {
   // 插件名为 controller
   name: 'controller',
@@ -43,8 +43,8 @@ const plugin = {
     },
   },
 };
-Chimee.install(plugin);
-const player = new Chimee({
+Mango.install(plugin);
+const player = new Mango({
   // 播放地址
   src: 'http://cdn.toxicjohann.com/lostStar.mp4',
   // src: 'http://cdn.toxicjohann.com/%E4%BA%8E%E6%98%AF.mp4',
@@ -52,10 +52,7 @@ const player = new Chimee({
   // src: 'http://yunxianchang.live.ujne7.com/vod-system-bj/79_3041054cc65-ae8c-4b63-8937-5ccb05f79720.m3u8',
   // dom容器
   wrapper: '#wrapper',
-  plugin: [{
-    name: 'controller',
-    inner: false,
-  }],
+  plugin: [ 'controller' ],
   // preset: {
   //   flv: window.chimeeKernelFlv,
   //   hls: window.chimeeKernelHls

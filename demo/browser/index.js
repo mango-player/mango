@@ -1,4 +1,4 @@
-const Chimee = window.Chimee;
+const Mango = window.Mango;
 const plugin = {
   // 插件名为 controller
   name: 'controller',
@@ -43,8 +43,8 @@ const plugin = {
     },
   },
 };
-Chimee.install(plugin);
-const player = new Chimee({
+Mango.install(plugin);
+const player = new Mango({
   // 播放地址
   src: 'http://cdn.toxicjohann.com/lostStar.mp4',
   // src: 'http://cdn.toxicjohann.com/%E4%BA%8E%E6%98%AF.mp4',

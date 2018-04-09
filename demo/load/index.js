@@ -1,4 +1,4 @@
-const Chimee = window.Chimee;
+const Mango = window.Mango;
 const nativeSwitch = {
   name: 'native-switch',
   el: '<button>G.E.M switch</button>',
@@ -35,19 +35,19 @@ const hlsSwitch = {
     });
   },
 };
-Chimee.install(nativeSwitch);
-Chimee.install(nativeOneSwitch);
-Chimee.install(flvSwitch);
-Chimee.install(hlsSwitch);
-Chimee.installKernel({
-  flv: window.chimeeKernelFlv,
-  hls: window.chimeeKernelHls,
+Mango.install(nativeSwitch);
+Mango.install(nativeOneSwitch);
+Mango.install(flvSwitch);
+Mango.install(hlsSwitch);
+Mango.installKernel({
+  flv: window.mangoKernelFlv,
+  hls: window.mangoKernelHls,
 });
-const player = new Chimee({
+const player = new Mango({
   src: 'http://cdn.toxicjohann.com/lostStar.mp4',
   wrapper: '#wrapper',
   plugin: [ 'nativeSwitch', 'nativeOneSwitch', 'flvSwitch', 'hlsSwitch' ],
-  volume: 0.1,
+  volume: 0.6,
   kernels: [ 'flv', 'hls' ],
   autoplay: true,
   controls: true,
