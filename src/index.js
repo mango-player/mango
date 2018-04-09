@@ -23,31 +23,31 @@ export default class Chimee extends VideoWrapper {
   static config: GlobalConfig;
   static plugin: Plugin;
   destroyed = false;
-  @frozen
+  // @frozen
   __id = '_vm';
-  @frozen
+  // @frozen
   version = process.env.PLAYER_VERSION;
-  @frozen
+  // @frozen
   config = {
     errorHandler: undefined,
   };
-  @frozen
+  // @frozen
   static plugin = Plugin;
-  @frozen
+  // @frozen
   static config = new GlobalConfig();
-  @frozen
+  // @frozen
   static install = Dispatcher.install;
-  @frozen
+  // @frozen
   static uninstall = Dispatcher.uninstall;
-  @frozen
+  // @frozen
   static hasInstalled = Dispatcher.hasInstalled;
-  @frozen
+  // @frozen
   static installKernel = Dispatcher.installKernel;
-  @frozen
+  // @frozen
   static uninstallKernel = Dispatcher.uninstallKernel;
-  @frozen
+  // @frozen
   static hasInstalledKernel = Dispatcher.hasInstalledKernel;
-  @frozen
+  // @frozen
   static getPluginConfig = Dispatcher.getPluginConfig;
   constructor(config: UserConfig | string | Element) {
     super();

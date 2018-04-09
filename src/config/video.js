@@ -321,10 +321,10 @@ export default class VideoConfig {
 
   volume = 1;
 
-  @frozen
+  // @frozen
   _kernelProperty = [ 'isLive', 'box', 'preset', 'kernels', 'presetConfig' ];
 
-  @frozen
+  // @frozen
   _realDomAttr = [ 'src', 'controls', 'width', 'height', 'crossOrigin', 'loop', 'muted', 'preload', 'poster', 'autoplay', 'playsInline', 'x5VideoPlayerFullscreen', 'x5VideoOrientation', 'xWebkitAirplay', 'playbackRate', 'defaultPlaybackRate', 'autoload', 'disableRemotePlayback', 'defaultMuted', 'volume', 'x5VideoPlayerType' ];
 
   constructor(dispatcher: Dispatcher, config: Object) {

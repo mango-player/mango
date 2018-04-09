@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../lib'),
     filename: 'index.js',
-    library: 'MangoKernel',
+    library: 'Mango',
     libraryTarget: 'umd',
     libraryExport: 'default'
   },
