@@ -510,6 +510,10 @@ export default class Dispatcher {
     return isEmpty(plugin) ? 0 : plugin.$level;
   }
   _autoloadVideoSrcAtFirst() {
+    if (this.videoConfig.video_id) {
+      Log.warn('When you has config video_id, it will not autoreload');
+      return;
+    }
     if (this.videoConfig.autoload) {
       if (process.env.NODE_ENV !== 'prodution' && !this.videoConfig.src) {
         Log.warn('You have not set the src, so you better set autoload to be false. Accroding to https://github.com/Chimeejs/chimee/blob/master/doc/zh-cn/chimee-api.md#src.');
