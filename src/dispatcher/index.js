@@ -1,6 +1,6 @@
 // @flow
 import { isString, camelize, deepAssign, isObject, isEmpty, isArray, isFunction, transObjectAttrIntoArray, isPromise, Log, runRejectableQueue, addEvent, removeEvent, isError, deepClone } from 'mango-helper';
-import ChimeeKernel from 'mango-kernel';
+import ChimeeKernel from 'mango-kernel/src';
 import Bus from './bus';
 import Plugin from './plugin';
 import Dom from './dom';

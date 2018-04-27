@@ -102,6 +102,9 @@ export const dispatcherMethods = [
 export const kernelEvents = [
   'mediaInfo',
   'heartbeat',
+  'hlsSegmentLoaded',
+  'hlsBufferFull',
+  'hlsBufferEmpty',
   'error',
 ];
 export const domMethods = [
